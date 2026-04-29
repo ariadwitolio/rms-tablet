@@ -1,0 +1,15 @@
+@import 'tailwindcss' source(none);
+@source '../**/*.{js,ts,jsx,tsx}';
+
+@import 'tw-animate-css';
+
+/* ── Virtual keyboard / numpad cursor blink ──────────────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+/* Alias used by VirtualKeyboard.tsx and VirtualNumpad.tsx */
+@keyframes virtualCursorBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
